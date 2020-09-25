@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Banco Rende+</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <style>
+        .header-imagem {
+            height: 20em;
+            background-position: bottom center;
+            background-attachment: fixed;
+        }
+        
+        .caixa1 {
+            cursor: pointer;
+            background-color: #1f1f1f;
+            color: #9b9999;
+        }
+        
+        .zoom {
+            overflow: hidden;
+        }
+        
+        .zoom {
+            max-width: 100%;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        
+        .zoom:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 1400px) {
+            .caixa1 {
+                margin-left: 5px;
+            }
+        }
+        
+        @media (max-width: 580px) {
+            .caixa1 {
+                width: 220px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        
+        .bg-modal {
+            position: fixed;
+            top: -150%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(20, 20, 20, 0.6);
+            z-index: 30;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 350ms;
+        }
+        
+        .modal1 {
+            background-color: #ffffff;
+            text-align: center;
+            height: 40%;
+            border-radius: 20px;
+            position: relative;
+            margin: auto;
+            top: -50px;
+        }
+        
+        .fechar {
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            transition: 350ms;
+            font-size: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .divmodal {
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            height: 80px;
+        }
+        
+        .divmodal2 {
+            height: 100%;
+            padding: 30px;
+            color: white;
+            border-radius: 0 0 20px 20px;
+            background-color: #1f1f1f;
+        }
+        
+        @media (max-width: 768px) {
+            .modal1 {
+                height: 53%;
+                font-size: 14px;
+                padding: 30px;
+                top: -40;
+                bottom: auto;
+            }
+            .divmodal {
+                height: 60px;
+            }
+            .divmodal h5 {
+                margin-top: 5px;
+            }
+            .divmodal2 {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .modal1 {
+                height: 40%;
+            }
+            .divmodal {
+                height: 70px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header-imagem pt-2 pl-2 pr-2">
+        <div class="container-fluid">
+            <div class="row p-0">
+                <!-- Inicio do formulário topo -->
+                <div class="col-sm-12 p-0">
+                    <form class="p-0 col-sm-12 col-lg-6 offset-lg-3 d-flex p-0 justify-content-center">
+                        <button class="btn btn-primary col-sm-2  text-light p-0" style="font-size: 8pt;">Abrir</button>
+                        <input class="form-control ml-1 col-sm-2 pl-2 " style="font-size: 8pt; height: 40px;" type="text" placeholder="Agência">
+                        <input class="form-control float-left ml-1 col-sm-2 pl-2" style="font-size: 8pt; height: 40px;" type="text" placeholder="Conta">
+                        <input class="form-control ml-1 col-sm-2 pl-2" style="font-size: 8pt; height: 40px;" type="password" placeholder="Senha">
+                        <input class="btn btn-primary text-light  ml-1 col-sm-2 p-0" style="font-size: 8pt;" type="submit" value="Entrar">
+                    </form>
+                </div>
+            </div>
+            <!-- Fim do formulário topo -->
+
+            <div class="row">
+                <!-- Inicio Navegação -->
+                <div class="col-12 bg-primary mt-1 p-1 rounded d-flex justify-content-center align-items-center">
+                    <div class="col-3 col-sm-5 col-md-2 col-lg-3 d-flex justify-content-center align-items-center">
+                        <a href href="index.html" class="pl-5 logo" style="text-decoration: none; color:#424242;">Banco<strong> Rende+</strong></a>
+                    </div>
+
+
+                    <div class="d-none d-md-block col-3 col-sm-4 col-md-3 col-lg-3 text-right text-dark font-weight-bold mensagem">
+                        <span class="d-block">+ de 300 agências</span>
+                        <span style="font-size: 10pt;">no brasil</span>
+                    </div>
+                    <div class="d-none d-md-block col-3 col-sm-3 col-md-3 col-lg-2 text-dark font-weight-bold p-0 text-right mensagem">
+                        <span class="d-block">Pensado em você</span>
+                        <span style="font-size: 10pt;">conta rende+</span>
+                    </div>
+
+                    <div class="col-9 col-sm-7 col-md-4 col-lg-4 d-flex justify-content-center align-items-center p-0">
+                        <nav class="col-12 p-0 d-flex justify-content-center align-items-center text-dark navbar navbar-light">
+                            <ul class="nav float-right">
+                                <li class="nav-item" style="margin-right: -15px;"><a class="nav-link text-dark font-weight-bold" href="index.html">HOME</a></li>
+                                <li class="nav-item" style="margin-right: -15px;"><a class="nav-link text-dark font-weight-bold" href="entrar.html">ENTRAR</a></li>
+                                <li class="nav-item" style="margin-right: -15px;"><a class="nav-link text-dark font-weight-bold" href="contas.html">CONTAS</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fim Navegação -->
+
+    <div class="container-fluid conteudo bg-light">
+        <div class="row d-block pt-5 pb-5">
+            <div class="col-md-7 text-center justify-content-center m-auto pr-5 pl-5" data-anime="esquerda">
+                <h2 class="font-weight-bold">Contas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas tempore iure alias ex adipisci magni dolorem quae, eum ipsa provident? Eos adipisci unde iusto deserunt, odio itaque eius soluta.</p>
+            </div>
+        </div>
+        <section class="row">
+            <div class="col-12 col-sm-5 col-md-4 p-3 col-lg-8 col-xl-7 pb-5 divfont justify-content-center m-auto d-block d-lg-flex">
+                <div class="col-4 zoom col-md-4 mr-md-3 p-0 mb-3 caixa1" style="height: 280px; border-radius: 10px;">
+                    <div class="bg-primary col-12 d-flex flex-column justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
+                        <h6 class="font-weight-bold text-dark m-auto">Conta Rende+</h6>
+                    </div>
+                    <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+                        <span class="">- Sem tarifas</span>
+                        <span class="">- Sem limite de saque</span>
+                        <span class="">- Debito automático</span>
+                        <button class="btn btn-light mt-5" onclick="abrirModal()">Consultar</button>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 zoom  p-0 mr-md-3 mb-3 caixa1" style="height: 280px; border-radius: 10px;">
+                    <div class="bg-primary  d-flex flex-column col-12 justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
+                        <h6 class="font-weight-bold text-dark m-auto">Conta Opção 2</h6>
+                    </div>
+                    <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+                        <span class="">- Item 1</span>
+                        <span class="">- Item 2</span>
+                        <span class="">- Item 3</span>
+                        <button class="btn btn-light mt-5">Consultar</button>
+                    </div>
+                </div>
+                <div class="col-4 zoom col-md-4 p-0 mb-3 caixa1" style="height: 280px; border-radius: 10px;">
+                    <div class="bg-primary col-12 d-flex flex-column justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
+                        <h6 class="font-weight-bold text-dark m-auto">Conta Opção 3</h6>
+                    </div>
+                    <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+                        <span class="">- Item 1</span>
+                        <span class="">- Item 2</span>
+                        <span class="">- Item 3</span>
+                        <button class="btn btn-light mt-5">Consultar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-modal col-12" id="modal1">
+                <div class="modal1 p-0 col-11 col-md-9 col-lg-6">
+                    <p class="fechar" onclick="fecharModal()"><span>&times</span></p>
+                    <div class="divmodal bg-primary text-light d-flex justify-content-center align-items-center">
+                        <h5 class="font-weight-bold">Conta Rende +</h5>
+                    </div>
+                    <div class="divmodal2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus veniam, facere dolores ipsum perspiciatis accusantium ad necessitatibus dolore asperiores ducimus fugit pariatur.</p>
+                        <h4>Beneficios:</h4>
+                        <p>1. Sem tarifas | 2. Sem liimite de saque | 3. Débito automático</p>
+                    </div>
+                </div>
+        </section>
+
+
+        <footer class="p-4 bg-light row" style="border-top: 1px solid gray;">
+            <div class="col-md-6 text-center">
+                <p>
+                    <a class="text-dark text-decoration-none font-weight-bold ml-3" href="index.html">Home</a>
+                    <a class="text-dark text-decoration-none font-weight-bold ml-3" href="entrar.html">Entrar</a>
+                    <a class="text-dark text-decoration-none font-weight-bold ml-3" href="">Cartões</a>
+                    <a class="text-dark text-decoration-none font-weight-bold ml-3" href="contas.html">Contas</a>
+                </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <a href="" class="text-dark ml-3">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="" class="text-dark ml-3">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-dark ml-3">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="text-dark ml-3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="d-block col-12 text-right"><span>by: @imaarques</span></div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+        function abrirModal() {
+            document.getElementById('modal1').style.top = "0";
+        }
+
+        function fecharModal() {
+            document.getElementById('modal1').style.top = "-150%";
+        }
+    </script>
+</body>
+
+</html>

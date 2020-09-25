@@ -1,0 +1,153 @@
+    html,
+    body {
+        margin: 0;
+        text-decoration: none;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: "Sansation";
+        src: url(../Sansation_Regular.ttf);
+    }
+    
+    body {
+        font-family: "Sansation";
+        overflow-x: hidden;
+        background-color: #1f1f1f;
+    }
+    
+    nav {
+        height: 70px;
+        font-size: 12px;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    .logo {
+        font-size: 18px;
+    }
+    
+    .header-imagem {
+        height: 25em;
+        background: url(../imagem/imagem-banco.png) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .titulo1 {
+        margin-top: 15%;
+    }
+    
+    .conteudo-titulo {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .conteudo-titulo span.titulo {
+        color: #fff;
+        background-color: #111;
+        padding: 20px;
+        font-size: 25px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+    
+    .conteudo-titulo a:hover {
+        text-decoration: underline #0f5bce;
+    }
+    
+    .caixa {
+        background-color: #1f1f1f;
+    }
+    
+    .caixa2 {
+        padding: 20px 0px 60px 0;
+        background-color: #1f1f1f;
+    }
+    
+    .divabra {
+        background-color: #1f1f1f;
+    }
+    
+    .titulofooter {
+        color: #795600;
+    }
+    
+    #linha {
+        border: 1px solid rgb(39, 38, 38);
+        width: 70%;
+    }
+    
+    .mensagem {
+        font-size: 16px;
+    }
+    
+    @media (max-width: 970px) {
+        .conteudo-titulo span.titulo {
+            font-size: 18px;
+        }
+        .logo {
+            font-size: 15px;
+        }
+        .titulo1 {
+            margin-top: 23%;
+        }
+    }
+    
+    @media (max-width: 762px) {
+        .logo {
+            width: 150px;
+        }
+        #cartao {
+            margin-left: -5px;
+        }
+        .divmargem {
+            margin-bottom: 15px;
+        }
+    }
+    
+    @media (max-width: 650px) {
+        .titulo1 {
+            margin-top: 38%;
+        }
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    /*Inicio CSS animação*/
+    
+    [data-anime] {
+        opacity: 0;
+        -moz-transition: .8s;
+        -webkit-transition: .8s;
+        transition: .8s;
+    }
+    
+    [data-anime="esquerda"] {
+        -moz-transform: translate3d(-100px, 0, 0);
+        -webkit-transform: translate3d(-100px, 0, 0);
+        transform: translate3d(-100px, 0, 0);
+    }
+    
+    [data-anime="direita"] {
+        -moz-transform: translate3d(100px, 0, 0);
+        -webkit-transform: translate3d(100px, 0, 0);
+        transform: translate3d(100px, 0, 0);
+    }
+    
+    [data-anime].animacao {
+        opacity: 1;
+        -moz-transform: translate3d(0px, 0px, 0px);
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+    
+    div form button {
+        height: 40px;
+    }
+    
+    div form input {
+        height: 40px;
+    }
