@@ -27,6 +27,20 @@
         font-size: 18px;
     }
     
+    .itemnav:hover {
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255, 0.3);
+    }
+    
+    .itemnavativo {
+        background-color: rgb(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+    
+    .itemnav a {
+        line-height: 30px;
+    }
+    
     .header-imagem {
         height: 25em;
         background: url(../imagem/imagem-banco.png) no-repeat;
@@ -72,11 +86,6 @@
     
     .titulofooter {
         color: #795600;
-    }
-    
-    #linha {
-        border: 1px solid rgb(39, 38, 38);
-        width: 70%;
     }
     
     .mensagem {

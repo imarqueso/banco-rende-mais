@@ -17,11 +17,37 @@
             height: 35em;
         }
         
-        @media (max-width: 762px) {
+        .fundoimagem {
+            background: url(imagem/imagem-banco2.png) center no-repeat;
+            background-size: cover;
+            height: 450px;
+        }
+        
+        .tamdiv {
+            height: 450px;
+        }
+        
+        .tamdiv img {
+            width: 60%;
+        }
+        
+        @media (max-width: 765px) {
             [data-anime="direita"] {
                 -moz-transform: translate3d(15px, 0, 0);
                 -webkit-transform: translate3d(15px, 0, 0);
                 transform: translate3d(15px, 0, 0);
+            }
+            .tamdiv {
+                height: 700px;
+            }
+            .tamdiv img {
+                width: 45%;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .tamdiv img {
+                width: 55%;
             }
         }
         
@@ -72,7 +98,7 @@
             </div>
 
             <div class="row">
-                <div class="col-12 bg-primary mt-1 p-1 rounded d-flex justify-content-center align-items-center" style="height: 70px;">
+                <div class="col-12 bg-primary mt-1 p-1 rounded d-flex justify-content-center align-items-center" style="height: 80px;">
                     <div class="col-5 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center">
                         <a href href="index.html" class="pl-5 logo" style="text-decoration: none; color:#424242;">Banco<strong> Rende+</strong></a>
                     </div>
@@ -89,9 +115,9 @@
                     <div class="col-9 col-sm-7 col-md-4 col-lg-4 justify-content-center align-items-center p-0 d-none d-lg-flex">
                         <nav class="col-12 p-0 d-flex justify-content-center align-items-center text-dark navbar navbar-light">
                             <ul class="nav float-right">
-                                <li class="nav-item" style="margin-right: -15px;"><a class="nav-link text-dark font-weight-bold" href="index.html">HOME</a></li>
-                                <li class="nav-item" style="margin-right: -15px;"><a class="nav-link text-dark font-weight-bold" href="entrar.html">ENTRAR</a></li>
-                                <li class="nav-item" style="margin-right: -15px;"><a class="nav-link text-dark font-weight-bold" href="contas.html">CONTAS</a></li>
+                                <li class="nav-item itemnav itemnavativo mr-2"><a class="nav-link text-dark font-weight-bold" href="index.html">HOME</a></li>
+                                <li class="nav-item itemnav mr-2"><a class="nav-link text-dark font-weight-bold" href="entrar.html">ENTRAR</a></li>
+                                <li class="nav-item itemnav"><a class="nav-link text-dark font-weight-bold" href="contas.html">CONTAS</a></li>
                             </ul>
                         </nav>
 
@@ -117,7 +143,7 @@
 
             <div class="row justify-content-center titulo1">
                 <div class="conteudo-titulo justify-content-center col-12 p-0">
-                    <a href=" "><span class="titulo">ABRA SUA CONTA</span></a>
+                    <a href=" "><span class="titulo">ABRA SUA CONTA <i class="fas fa-arrow-right ml-2"></i></span></a>
                 </div>
             </div>
         </div>
@@ -125,36 +151,32 @@
 
     <div class="container-fluid">
 
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-10 pt-5 pb-5 d-flex justify-content-center align-items-center" data-anime="esquerda">
-                <div class="col-12 d-block d-md-flex">
-                    <div class="col-md-7 text-light text-center divmargem p-0 align-self-center">
-                        <h2 class="font-weight-bold">Empréstimos e Financiamentos</h2>
-                        <p>
+        <div class="row bg-white tamdiv">
+            <div class="col-12 col-md-7 pt-5 pb-5 d-flex justify-content-center align-items-center" data-anime="esquerda">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="col-8 text-dark text-center divmargem p-0">
+                        <h2 class="font-weight-bold text-primary">Empréstimos e Financiamentos</h2>
+                        <h5 class="font-weight-bold">
                             Oferecemos condições especiais para nossos clientes com prazos e taxas pensando na experiência do cliente com nosso banco.
-                        </p>
-                        <a href="" class="btn btn-primary">Veja mais</a>
-                    </div>
-                    <div class="col-md-5 text-center align-self-center">
-                        <img src="imagem/dinheiro.png" alt="cartao" style="width: 75%;">
+                        </h5>
+                        <a href="" class="btn btn-primary mt-3">Veja mais <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-md-5 text-center" data-anime="direita">
+                <img src="imagem/dinheiro.png" alt="cartao">
+            </div>
         </div>
-        <hr id="linha" />
-        <div class="row d-flex justify-content-center align-items-center pt-2 pb-5">
+        <div class="row d-flex justify-content-center align-items-center pt-2 pb-5 fundoimagem">
             <div class="col-10 pt-5 pb-5 d-flex justify-content-center align-items-center" data-anime="direita">
-                <div class="col-12 d-block d-md-flex">
-                    <div class=" col-md-5 text-center align-self-center divmargem ">
-                        <img src="imagem/mao.png " alt="mao " style="width: 55%; ">
-                    </div>
-                    <div class="col-md-7 pr-4 pl-4 m-auto">
-                        <div class="align-self-center text-light text-center ">
-                            <h2 class="font-weight-bold ">Seu dinheiro na sua mão</h2>
-                            <p>
+                <div class="col-12 d-block d-md-flex position-relative">
+                    <div class="col-md-7 pr-4 pl-4">
+                        <div class="text-light text-center">
+                            <h1 class="font-weight-bold ">Seu dinheiro na sua mão</h1>
+                            <h5 class="font-weight-bold">
                                 Abra sua conta conosco temos opções para você e sua empresa além de nossa melhor opção, a conta rende+.
-                            </p>
-                            <a href=" " class="btn btn-primary">Veja mais</a>
+                            </h5>
+                            <a href=" " class="btn btn-primary mt-3">Veja mais <i class="fas fa-arrow-right ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +185,7 @@
     </div>
 
     <div class="container-fluid text-dark bg-white">
-        <div class="row pt-5 pb-5">
+        <div class="row pt-5 pb-5" style="border-top: 1px solid #bebbbb;">
             <div class="col-md-6 text-center">
                 <p>
                     <a class="text-dark text-decoration-none font-weight-bold ml-3" href="index.html">Home</a>
