@@ -43,6 +43,9 @@
     
     .header-imagem {
         height: 25em;
+    }
+    
+    .header1 {
         background: url(../imagem/imagem-banco.png) no-repeat;
         background-size: cover;
         background-attachment: fixed;
