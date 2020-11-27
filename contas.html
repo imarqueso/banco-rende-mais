@@ -167,8 +167,9 @@
 </head>
 
 <body>
-    <div class="header-imagem pt-2 pl-2 pr-2">
-        <div class="container-fluid">
+
+    <div class="container-fluid">
+        <div class="header-imagem pt-2 pl-2 pr-2">
             <div class="row p-0">
                 <!-- Inicio do formulário topo -->
                 <div class="col-sm-12 p-0">
@@ -225,11 +226,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Fim Navegação -->
+        <!-- Fim Navegação -->
 
-    <div class="container-fluid conteudo bg-light">
-        <div class="row" style="height: 450px;">
+        <div class="row conteudo bg-light" style="height: 450px;">
             <div class="col-12 col-md-7 p-5 mt-4" data-anime="esquerda">
                 <div class="pl-md-4">
                     <h2 class="font-weight-bold">Contas</h2>
@@ -243,10 +242,10 @@
                 </div>
             </div>
         </div>
-        <section class="row bg-primary p-5 d-flex justify-content-center align-items-center">
+        <div class="row p-5 d-flex justify-content-center align-items-center" style=" background: url(imagem/fundo-banco2.jpg) no-repeat center; background-size: cover; background-attachment: fixed;">
             <div class="col-12 col-sm-5 col-md-4 p-3 col-lg-8 col-xl-7 pb-5 divfont justify-content-center m-auto d-block d-lg-flex align-items-center">
                 <div class="col-4 zoom col-md-4 mr-md-3 p-0 mb-3 caixa1" style="height: 280px; border-radius: 10px;">
-                    <div class="bg-light col-12 d-flex flex-column justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
+                    <div class="bg-primary col-12 d-flex flex-column justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
                         <h6 class="font-weight-bold text-dark m-auto">Conta Rende+</h6>
                     </div>
                     <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
@@ -257,7 +256,7 @@
                     </div>
                 </div>
                 <div class="col-4 col-md-4 zoom  p-0 mr-md-3 mb-3 caixa1" style="height: 280px; border-radius: 10px;">
-                    <div class="bg-light  d-flex flex-column col-12 justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
+                    <div class="bg-primary  d-flex flex-column col-12 justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
                         <h6 class="font-weight-bold text-dark m-auto">Conta Opção 2</h6>
                     </div>
                     <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
@@ -268,7 +267,7 @@
                     </div>
                 </div>
                 <div class="col-4 zoom col-md-4 p-0 mb-3 caixa1" style="height: 280px; border-radius: 10px;">
-                    <div class="bg-light col-12 d-flex flex-column justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
+                    <div class="bg-primary col-12 d-flex flex-column justify-content-center align-items-center " style="height: 60px;  border-radius: 10px 10px 0 0;">
                         <h6 class="font-weight-bold text-dark m-auto">Conta Opção 3</h6>
                     </div>
                     <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
@@ -279,79 +278,86 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-modal col-12" id="modal1">
-                <div class="modal1 p-0 col-11 col-md-9 col-lg-6">
-                    <p class="fechar" onclick="fecharModal()"><span>&times</span></p>
-                    <div class="divmodal bg-primary text-light d-flex justify-content-center align-items-center">
-                        <h5 class="font-weight-bold">Conta Rende +</h5>
-                    </div>
-                    <div class="divmodal2">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus veniam, facere dolores ipsum perspiciatis accusantium ad necessitatibus dolore asperiores ducimus fugit pariatur.</p>
-                        <h4>Beneficios:</h4>
-                        <p>1. Sem tarifas | 2. Sem liimite de saque | 3. Débito automático</p>
-                    </div>
+        </div>
+        <div class="bg-modal col-12" id="modal1">
+            <div class="modal1 p-0 col-11 col-md-9 col-lg-6">
+                <p class="fechar" onclick="fecharModal()"><span>&times</span></p>
+                <div class="divmodal bg-primary text-light d-flex justify-content-center align-items-center">
+                    <h5 class="font-weight-bold">Conta Rende +</h5>
                 </div>
-        </section>
+                <div class="divmodal2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus veniam, facere dolores ipsum perspiciatis accusantium ad necessitatibus dolore asperiores ducimus fugit pariatur.</p>
+                    <h4>Beneficios:</h4>
+                    <p>1. Sem tarifas | 2. Sem liimite de saque | 3. Débito automático</p>
+                </div>
+            </div>
         </div>
 
 
-        <div class="container-fluid text-dark bg-white">
-            <div class="row pt-5 pb-5" style="border-top: 1px solid  #bebbbb;">
-                <div class="col-md-6 text-center">
-                    <p>
-                        <a class="text-dark text-decoration-none font-weight-bold ml-3" href="index.html">Home</a>
-                        <a class="text-dark  text-decoration-none font-weight-bold ml-3" href="entrar.html">Entrar</a>
-                        <a class="text-dark  text-decoration-none font-weight-bold ml-3" href="contas.html">Contas</a>
-                    </p>
+
+        <div class="row p-5" style="background-color: rgb(16, 11, 36);">
+            <div class="col-12 d-block d-md-flex align-items-center p-0">
+                <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-8 pb-4 pb-md-0">
+                        <ul class="nav navbar">
+                            <li class="nav-item"> <a class="text-light text-decoration-none font-weight-bold ml-3 nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"> <a class="text-light text-decoration-none font-weight-bold ml-3 nav-link" href="entrar.html">Entrar</a></li>
+                            <li class="nav-item"> <a class="text-light text-decoration-none font-weight-bold ml-3 nav-link" href="contas.html">Contas</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center text-center" style="font-size: 17px;">
-                    <a href=" " class="text-dark  ml-3 ">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <a href=" " class="text-light  ml-3 ">
                         <i class="fab fa-youtube "></i>
                     </a>
-                    <a href=" " class="text-dark ml-3 ">
+                    <a href=" " class="text-light ml-3 ">
                         <i class="fab fa-instagram "></i>
                     </a>
-                    <a href=" " class="text-dark ml-3 ">
+                    <a href=" " class="text-light ml-3 ">
                         <i class="fab fa-facebook "></i>
                     </a>
-                    <a href=" " class="text-dark ml-3 ">
+                    <a href=" " class="text-light ml-3 ">
                         <i class="fab fa-twitter "></i>
                     </a>
                 </div>
-                <div class="col-12 mt-4 d-flex justify-content-end align-items-center text-right">
-                    <h6 class="font-weight-bold">Desenvolvido por: @imaarques</h6>
-                </div>
             </div>
+            <div class="col-12 d-flex justify-content-center align-items-center pt-4">
+                <h6 class="font-weight-bold text-light">Desenvolvido por: @imaarques</h6>
+
+            </div>
+        </div>
+    </div>
 
 
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-            <script src="js/bootstrap.min.js "></script>
-            <script type="text/javascript" src="js/script.js"></script>
 
-            <script>
-                function abrirModal() {
-                    document.getElementById('modal1').style.top = "0";
-                }
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
-                function fecharModal() {
-                    document.getElementById('modal1').style.top = "-150%";
-                }
-            </script>
+    <script>
+        function abrirModal() {
+            document.getElementById('modal1').style.top = "0";
+        }
 
-            <script>
+        function fecharModal() {
+            document.getElementById('modal1').style.top = "-150%";
+        }
+    </script>
+
+    <script>
+        document.getElementById('modal2').style.left = "-250%";
+
+        function funcoes() {
+            if (document.getElementById('modal2').style.left == '-250%') {
+                document.getElementById('modal2').style.left = "0px";
+            } else {
                 document.getElementById('modal2').style.left = "-250%";
-
-                function funcoes() {
-                    if (document.getElementById('modal2').style.left == '-250%') {
-                        document.getElementById('modal2').style.left = "0px";
-                    } else {
-                        document.getElementById('modal2').style.left = "-250%";
-                    }
-                }
-            </script>
+            }
+        }
+    </script>
 </body>
 
 </html>
