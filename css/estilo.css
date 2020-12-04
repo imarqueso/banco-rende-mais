@@ -95,6 +95,53 @@
         font-size: 16px;
     }
     
+    #menuclose2 {
+        display: none;
+    }
+    
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .fadeIn {
+        -webkit-animation: fadeIn .7s ease-in-out;
+        -moz-animation: fadeIn .7s ease-in-out;
+        -o-animation: fadeIn .7s ease-in-out;
+        animation: fadeIn .7s ease-in-out;
+    }
+    
     @media (max-width: 970px) {
         .conteudo-titulo span.titulo {
             font-size: 10px;

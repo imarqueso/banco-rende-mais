@@ -14,7 +14,7 @@
 
     <style>
         .header-imagem {
-            height: 35em;
+            height: 40em;
         }
         
         .fundoimagem {
@@ -56,16 +56,23 @@
         
         .bg-modal {
             position: fixed;
-            top: 0px;
+            top: 0;
             left: -250%;
             margin: auto;
             height: 100vh;
-            width: 250px;
+            width: 100vw;
             z-index: 30;
+            transition: 350ms;
+        }
+        
+        .bg-modal2 {
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: 350ms;
         }
         
         .modal1 {
@@ -128,16 +135,19 @@
                     </div>
                     <div class="d-flex d-lg-none justify-content-end align-items-center col-7 col-sm-6 col-md-2 fechar">
                         <div class="d-flex justify-content-center align-items-center">
-                            <i class="fas fa-bars pr-4" onclick="funcoes()"></i>
+                            <i class="fas fa-bars pr-4 fadeIn" id="menuclose" onclick="funcoes()"></i>
+                            <i class="fas fa-times pr-4 fadeIn" id="menuclose2" onclick="funcoes2()"></i>
                         </div>
                     </div>
-                    <div class="bg-modal bg-primary" id="modal1">
-                        <div class="modal1 navbar navbar-light">
-                            <ul class="nav-pills" style="list-style: none;">
-                                <li class="nav-item mb-3"><a class="nav-link text-dark font-weight-bold" href="index.html">HOME</a></li>
-                                <li class="nav-item mb-3"><a class="nav-link text-dark font-weight-bold" href="entrar.html">ENTRAR</a></li>
-                                <li class="nav-item mb-3"><a class="nav-link text-dark font-weight-bold" href="contas.html">CONTAS</a></li>
-                            </ul>
+                    <div class="bg-modal" id="modal1" onclick="funcoes3()">
+                        <div class="bg-modal2 bg-primary">
+                            <div class="modal1 navbar navbar-light">
+                                <ul class="nav-pills" style="list-style: none;">
+                                    <li class="nav-item mb-3"><a class="nav-link text-dark font-weight-bold" href="index.html">HOME</a></li>
+                                    <li class="nav-item mb-3"><a class="nav-link text-dark font-weight-bold" href="entrar.html">ENTRAR</a></li>
+                                    <li class="nav-item mb-3"><a class="nav-link text-dark font-weight-bold" href="contas.html">CONTAS</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -227,11 +237,30 @@
     <script>
         document.getElementById('modal1').style.left = "-250%";
 
+        const menuclose = document.getElementById('menuclose');
+        const menuclose2 = document.getElementById("menuclose2");
+
         function funcoes() {
             if (document.getElementById('modal1').style.left == '-250%') {
                 document.getElementById('modal1').style.left = "0px";
-            } else {
+                menuclose.style.display = "none";
+                menuclose2.style.display = "block";
+            }
+        }
+
+        function funcoes2() {
+            if (document.getElementById('modal1').style.left = "0px") {
                 document.getElementById('modal1').style.left = "-250%";
+                menuclose.style.display = "block";
+                menuclose2.style.display = "none";
+            }
+        }
+
+        function funcoes3() {
+            if (document.getElementById('modal1').style.left = "0px") {
+                document.getElementById('modal1').style.left = "-250%";
+                menuclose.style.display = "block";
+                menuclose2.style.display = "none";
             }
         }
     </script>
