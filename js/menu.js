@@ -5,6 +5,7 @@ class menuDrop {
         this._modal = document.querySelector('#modal1');
         this._abrirMenu = document.querySelector('#menuclose');
         this._fecharMenu = document.querySelector('#menuclose2');
+        this._fundoMenu = document.querySelector('#fundoMenu');
 
         this.inicioModal();
         this.execModal();
@@ -39,11 +40,16 @@ class menuDrop {
         this._fecharMenu.addEventListener('click', () => {
             return this.modalFechado();
         });
+    }
 
-        this._modal.addEventListener('click', () => {
-            return this.modalFechado();
-        });
+    fecharMenuFora() {
+        let fecharMenuClick = this._modal;
+        fecharMenuClick.onclick = (event) => {
 
+            if (event.target !== this._fundoMenu) {
+                return this.modalFechado();
+            }
+        }
     }
 
     execModal() {
@@ -51,6 +57,8 @@ class menuDrop {
             return this.abrirMenu();
         } else if (this.fecharMenu()) {
             return this.fecharMenu();
+        } else if (this.fecharMenuFora()) {
+            return this.fecharMenuFora();
         }
     }
 
