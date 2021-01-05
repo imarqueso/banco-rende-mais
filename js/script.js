@@ -18,3 +18,16 @@ if (elementos.length) {
         animaScroll();
     })
 }
+
+var modal3 = document.querySelector('.bg-modal3');
+
+
+function abrirModal() {
+    modal3.style.top = '0px';
+
+}
+
+function fecharModal() {
+    modal3.style.top = '-150%';
+
+}
