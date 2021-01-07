@@ -5,26 +5,21 @@
         padding: 0;
     }
     
-    @font-face {
-        font-family: "Sansation";
-        src: url(../Sansation_Regular.ttf);
-    }
-    
     body {
-        font-family: "Sansation";
+        font-family: 'Ubuntu', sans-serif;
         overflow-x: hidden;
         background-color: #1f1f1f;
     }
     
     nav {
         height: 70px;
-        font-size: 12px;
+        font-size: 16px;
         position: absolute;
         z-index: 10;
     }
     
     .logo {
-        font-size: 18px;
+        font-size: 24px;
     }
     
     .itemnav:hover {
