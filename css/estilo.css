@@ -9,6 +9,8 @@
         font-family: 'Ubuntu', sans-serif;
         overflow-x: hidden;
         background-color: #1f1f1f;
+        margin: 0 auto;
+        max-width: 1400px;
     }
     
     nav {
